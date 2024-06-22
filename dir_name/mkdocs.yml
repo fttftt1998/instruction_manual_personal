@@ -10,7 +10,6 @@ nav:
   - 论坛: forum/index.md
 theme:
   name: 'material' # 使用Material for MkDocs主题
-  custom_dir: 'overrides' # 如果你自定义了主题，指定自定义目录
   palette:
     primary: 'blue' # 主题颜色
     accent: 'light blue' # 强调颜色

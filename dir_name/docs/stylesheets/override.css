@@ -1,0 +1,28 @@
+/* 重置默认的TOC样式 */
+.md-sidebar__inner {
+    flex-direction: row !important; /* 将默认的垂直布局改为水平 */
+    overflow-x: auto; /* 添加水平滚动条，以防内容超出屏幕 */
+  }
+  
+  /* 调整TOC项的样式 */
+  .md-nav__list {
+    display: flex !important;
+    flex-wrap: nowrap; /* 阻止换行 */
+  }
+  
+  .md-nav__item {
+    margin-right: 1rem; /* 为每个TOC项之间添加间隔 */
+  }
+  
+  /* 可选：调整TOC文字样式 */
+  .md-nav__link {
+    white-space: nowrap; /* 防止标题文本换行 */
+  }
+  
+  /* 可能需要进一步调整以适配不同屏幕尺寸和布局需求 */
+  @media (max-width: 768px) {
+    /* 在小屏设备上可能需要不同的处理，比如堆叠显示 */
+    .md-sidebar__inner {
+      flex-direction: column;
+    }
+  }
