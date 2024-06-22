@@ -3,15 +3,36 @@ site_description: FTT个人成果展示
 repo_url: https://github.com/fttftt1998/instruction_manual_personal
 nav:
   - 首页: index.md
-  - 产品:
-    - 分类: product/category.md
-    - 介绍: product/introduction.md
+  - 产品详情:
+    - 眼镜类: product_des/glass1.md
+    - 瞄镜类: product_des/glass2.md
+  - 产品分类:
+    - 产品简介: product_cat/describe.md
+    - 产品操作说明: product_cat/user_guide.md
+    - 版本控制: product_cat/version_release.md
   - 固件升级指南: firmware/upgrade_guide.md
   - 论坛: forum/index.md
+  - 留言板: dashboard/index.md
+  - 关于: about/index.md
 theme:
-  name: 'material' # 使用Material for MkDocs主题
+  name: material 
+  features:
+    - navigation.tabs
   palette:
-    primary: 'blue' # 主题颜色
-    accent: 'light blue' # 强调颜色
+    # 日间模式
+    - scheme: default
+      # 主颜色
+      primary: yellow
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: 切换至夜间模式
+    # 夜间模式
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至日间模式
   logo: 'assets/狗撑伞.png' # 网站logo
   favicon: 'assets/狗撑伞.png' # 网站favicon
