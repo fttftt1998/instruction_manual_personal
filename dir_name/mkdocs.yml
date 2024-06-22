@@ -1,0 +1,18 @@
+site_name: FTT的个人成果展示
+site_description: FTT个人成果展示
+repo_url: https://github.com/fttftt1998/instruction_manual_personal
+nav:
+  - 首页: index.md
+  - 产品:
+    - 分类: product/category.md
+    - 介绍: product/introduction.md
+  - 固件升级指南: firmware/upgrade_guide.md
+  - 论坛: forum/index.md
+theme:
+  name: 'material' # 使用Material for MkDocs主题
+  custom_dir: 'overrides' # 如果你自定义了主题，指定自定义目录
+  palette:
+    primary: 'blue' # 主题颜色
+    accent: 'light blue' # 强调颜色
+  logo: 'assets/狗撑伞.png' # 网站logo
+  favicon: 'assets/狗撑伞.png' # 网站favicon
