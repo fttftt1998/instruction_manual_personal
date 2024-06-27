@@ -1,31 +1,29 @@
-site_name: FTT的个人成果展示
-site_description: FTT个人成果展示
-repo_url: https://github.com/fttftt1998/instruction_manual_personal
-nav:
-  - 首页: index.md
-  - 产品详情:
-    - 眼镜类: product_des/glass1.md
-    - 瞄镜类: product_des/glass2.md
-  - 产品分类:
-    - 产品简介: product_cat/describe.md
-    - 产品操作说明: product_cat/user_guide.md
-    - 版本控制: product_cat/version_release.md
-  - 固件升级指南: firmware/upgrade_guide.md
-  - 论坛: forum/index.md
-  - 留言板: dashboard/index.md
-  - 关于: about/index.md
+# Project information
+site_name: Fengtingting
+site_url: 
+site_author: Fengtingting
+site_description: 
 theme:
   name: material 
   features:
-    - navigation.tabs
+    - navigation.tabs 
+    - navigation.top   # 返回顶部的按钮 在上滑时出现
+    - search.suggest   # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight   # 搜索出的文章关键词加入高亮
+    - search.share   #搜索分享按钮吧 
   palette:
     # 日间模式
     - scheme: default
       # 主颜色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
       primary: yellow
+      # 链接等可交互元件的高亮色
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#accent-color
       accent: orange
       toggle:
+        # 图标
         icon: material/weather-night
+        # 鼠标悬浮提示
         name: 切换至夜间模式
     # 夜间模式
     - scheme: slate
@@ -34,5 +32,30 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
-  logo: 'assets/狗撑伞.png' # 网站logo
-  favicon: 'assets/狗撑伞.png' # 网站favicon
+      
+nav:
+  - 首页: index.md
+  - 产品类别: 
+    - 眼镜类: 眼镜类.md
+    - 瞄镜类: 瞄镜类.md
+    - 望远镜类: 望远镜类.md
+    - 其他: 其他类.md
+  - 产品详情: 
+    - 产品简介: 产品简介.md
+    - 产品操作指南:
+      - 眼镜类: 
+        - ADNV-G14P2: ADNV-G14P2操作指南.md
+        - ADNV-G14SE: ADNV-G14SE操作指南.md
+        - ADNV-GF31: ADNV-GF31操作指南.md
+      - 其他类:
+        - ADNV-RS2: ADNV-RS2操作指南.md
+        - ADNV-FM2: ADNV-FM2操作指南.md
+    - 版本控制: 版本控制.md
+  - 软件升级指南:
+    - 眼镜类: 
+        - ADNV-G14P2: ADNV-G14P2软件升级指南.md
+        - ADNV-G14SE: ADNV-G14SE软件升级指南.md
+    - 其他类:
+        - ADNV-RS2: ADNV-RS2录制盒升级指南.md
+
+ 
