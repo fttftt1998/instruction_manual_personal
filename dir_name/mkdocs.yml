@@ -1,6 +1,6 @@
 # Project information
-site_name: Fengtingting
-site_url: 
+site_name: Fengtingting的个人成果展示
+site_url: "https://fttftt1998.github.io/instruction_manual_personal/"
 site_author: Fengtingting
 site_description: 
 theme:
@@ -36,26 +36,25 @@ theme:
 nav:
   - 首页: index.md
   - 产品类别: 
-    - 眼镜类: 眼镜类.md
-    - 瞄镜类: 瞄镜类.md
-    - 望远镜类: 望远镜类.md
-    - 其他: 其他类.md
+    - 眼镜类: 产品类别/眼镜类.md
+    - 瞄镜类: 产品类别/瞄镜类.md
+    - 望远镜类: 产品类别/望远镜类.md
+    - 其他: 产品类别/其他类.md
   - 产品详情: 
-    - 产品简介: 产品简介.md
+    - 产品简介: 产品详情/产品简介.md
     - 产品操作指南:
       - 眼镜类: 
-        - ADNV-G14P2: ADNV-G14P2操作指南.md
-        - ADNV-G14SE: ADNV-G14SE操作指南.md
-        - ADNV-GF31: ADNV-GF31操作指南.md
+        - ADNV-G14P2: 产品详情/产品操作指南/ADNV-G14P2操作指南.md
+        - ADNV-G14SE: 产品详情/产品操作指南/ADNV-G14SE操作指南.md
+        - ADNV-GF31: 产品详情/产品操作指南/ADNV-GF31操作指南.md
       - 其他类:
-        - ADNV-RS2: ADNV-RS2操作指南.md
-        - ADNV-FM2: ADNV-FM2操作指南.md
-    - 版本控制: 版本控制.md
+        - ADNV-RS2: 产品详情/产品操作指南/ADNV-RS2操作指南.md
+    - 版本控制: 产品详情/版本控制.md
   - 软件升级指南:
     - 眼镜类: 
-        - ADNV-G14P2: ADNV-G14P2软件升级指南.md
-        - ADNV-G14SE: ADNV-G14SE软件升级指南.md
+        - ADNV-G14P2: 软件升级指南/ADNV-G14P2软件升级指南.md
+        - ADNV-G14SE: 软件升级指南/ADNV-G14SE软件升级指南.md
     - 其他类:
-        - ADNV-RS2: ADNV-RS2录制盒升级指南.md
+        - ADNV-RS2: 软件升级指南/ADNV-RS2录制盒升级指南.md
 
  
