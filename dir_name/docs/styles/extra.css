@@ -1,0 +1,5 @@
+/* 限制表格内图片的宽度 */
+.md-typeset img {
+    max-width: 300px; /* 可以根据需要调整大小 */
+    height: auto; /* 保持图片的宽高比 */
+  }
