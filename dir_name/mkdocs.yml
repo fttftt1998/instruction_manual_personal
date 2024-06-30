@@ -1,16 +1,22 @@
 # Project information
-site_name: Fengtingting的个人成果展示
-site_url: "https://fttftt1998.github.io/instruction_manual_personal/"
+site_name: Fengtingting
+site_url: 
 site_author: Fengtingting
 site_description: 
 theme:
   name: material 
+  logo: docs/pics/渲染图/logo.png
+  language: en
   features:
-    - navigation.tabs 
+    - navigation.expand #默认展开导航栏
+    - navigation.footer #底部导航栏
+    - navigation.tabs #顶级索引被作为tab
     - navigation.top   # 返回顶部的按钮 在上滑时出现
     - search.suggest   # 搜索输入一些字母时推荐补全整个单词
     - search.highlight   # 搜索出的文章关键词加入高亮
     - search.share   #搜索分享按钮吧 
+    - navigation.tabs.sticky #tab始终可见
+    - navigation.tracking #导航栏跟踪
   palette:
     # 日间模式
     - scheme: default
@@ -32,7 +38,8 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
-      
+extra_css:
+  - 'styles/extra.css' # 路径根据实际情况调整
 nav:
   - 首页: index.md
   - 产品类别: 
@@ -49,6 +56,7 @@ nav:
         - ADNV-GF31: 产品详情/产品操作指南/ADNV-GF31操作指南.md
       - 其他类:
         - ADNV-RS2: 产品详情/产品操作指南/ADNV-RS2操作指南.md
+        - ADNV-FM2: 产品详情/产品操作指南/ADNV-FM2操作指南.md
     - 版本控制: 产品详情/版本控制.md
   - 软件升级指南:
     - 眼镜类: 
