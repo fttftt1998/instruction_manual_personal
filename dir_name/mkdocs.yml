@@ -5,7 +5,7 @@ site_author: Fengtingting
 site_description: 
 theme:
   name: material 
-  logo: docs/pics/渲染图/logo.png
+  logo: pics/logo.png
   language: en
   features:
     - navigation.expand #默认展开导航栏
@@ -53,7 +53,7 @@ nav:
       - 眼镜类: 
         - ADNV-G14P2: 产品详情/产品操作指南/ADNV-G14P2(V1.2)操作指南.md
         - ADNV-G14SE: 产品详情/产品操作指南/ADNV-G14SE操作指南.md
-        - ADNV-GF31: 产品详情/产品操作指南/GF31操作指南.md
+        - ADNV-GF31: 产品详情/产品操作指南/ADNV-GF31操作指南.md
         - ADNV-FM2: 产品详情/产品操作指南/ADNV-FM2支架安装说明书.md
         - ADNV-RS2: 产品详情/产品操作指南/ADNV-RS2录制盒使用说明书.md
       - 其他类:
@@ -67,4 +67,32 @@ nav:
     - 其他类:
         - ADNV-RS2: 软件升级指南/ADNV-RS2录制盒升级指南.md
 
- 
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - smarty
+  - admonition                                      # 注解块支持
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex                             # 数学公式的TeX语法支持
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:                                     # 表情支持
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:                              # 任务清单支持
+      custom_checkbox: true
+  - pymdownx.tilde
+  - meta                                            # 元数据支持
+  - attr_list 

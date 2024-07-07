@@ -1,5 +1,48 @@
-/* 限制表格内图片的宽度 */
-.md-typeset img {
-    max-width: 300px; /* 可以根据需要调整大小 */
-    height: auto; /* 保持图片的宽高比 */
-  }
+th, td {
+  border: 1px solid var(--md-typeset-table-color);
+  border-spacing: 0;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+}
+
+.md-typeset__table {
+  line-height: 1;
+}
+
+.md-typeset__table table:not([class]) {
+  font-size: .74rem;
+  border-right: none;
+}
+
+.md-typeset__table table:not([class]) td,
+.md-typeset__table table:not([class]) th {
+  padding: 9px;
+}
+
+/* light mode alternating table bg colors */
+.md-typeset__table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* dark mode alternating table bg colors */
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+  background-color: hsla(var(--md-hue),25%,25%,1)
+}
+
+table thead th{
+  background:#73B1E0;color:#FFF;
+}
+
+
+/* --md-code-hl-color:#836FFF; */
+:root > * {
+--md-code-hl-comment-color: #cb8947;
+--md-code-hl-variable-color:#9F79EE;
+--md-code-hl-punctuation-color:#64b854;
+--md-code-hl-operator-color:#CD0000;
+--md-code-hl-function-color:#C874D7;
+--md-code-hl-string-color:#36AF6F;
+--md-code-hl-number-color:#36AF6F;
+--md-code-hl-generic-color:#36AF6F;
+}
